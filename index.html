@@ -6,20 +6,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="overlay" id="mask"></div>
     <header>
         <div class="nav-row-1-wrapper">
             <div class="container-fluid">
                 <div class="row nav-row-wrapper">
-                    <div class="col-1 nav-toggle-btn-wrapper">
-                        <button class="nav-toggle-btn nav-togglemob-btn" onclick="mobileshownav()"><i class="fa-solid fa-grip-lines"></i></button>
-                    </div>
                     <div class="col-md-3 col-4">
                         <a href="/index.html" ><img src="/images/logo.png" alt="" class="nav-logo"></a>
                     </div>
-                    <div class="col-md-6 col-5">
+                    <div class="col-2 nav-toggle-btn-wrapper">
+                        <button class="nav-toggle-btn nav-togglemob-btn" onclick="mobileshownav()"><i class="fa-solid fa-grip-lines"></i></button>
+                    </div>
+                    <div class="col-md-6 col-5 d-none d-md-none d-lg-block">
                         <ul class="nav-ul-wrapper">
                             <li class="nav-ul-li" ><a href="/cart.html" class="nav-ul-li-a">Home</a></li>
                             <li class="nav-ul-li"><a href="/wishlist.html" class="nav-ul-li-a">Master plan</a></li>
@@ -29,38 +31,30 @@
                             <li class="nav-ul-li"><a href="/wishlist.html" class="nav-ul-li-a">Location</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-5 text-end">
+                    <div class="col-md-3 col-5 text-end d-none d-md-none d-lg-block">
                         <button class="btn-primary">Register Now</button>
                     </div>
                 </div>
                 <div class="nav-toggle-wrapper" >
                     <div class="nav-toggle-wrapper-inner">
-                        <div class="nav-mob-log-wrapp">
-                            <a href="" class="nav-mob-a-ls"><img src="/assets/images/icons/user-1.svg" height="14px" alt=""><span>Login & Signup</span></a>
-                            <button class="nav-mob-close" onclick="mobileremovenav()" style="background-color: transparent;border: none;"><img src="/assets/images/icons/x.svg" alt=""></button>
+                        <div class="nav-mob-log-wrapp justify-content-end">
+                            <button class="nav-mob-close" onclick="mobileremovenav()" style="background-color: transparent;border: none;"><svg class="ast-mobile-svg ast-close-svg" fill="#3a3a3a" version="1.1" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path></svg></button>
                         </div>
                         <div>
                             <ul class="nav-mobile-ul-wrapper">
-                                <li class="nav-mobile-ul-t-li mt-1"><a href="" class="nav-mobile-ul-t-li-a"><img src="/assets/images/icons/coin.webp" class="mob-nav-icon-img" alt=""><span>Super Coin Zone</span></a></li>
-                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><img src="/assets/images/icons/plus.webp" class="mob-nav-icon-img" alt=""><span>Flipkart Plus Zone</span></a></li>
-                                <hr class="m-0">
-                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><img src="/assets/images/icons/all-cat.webp" class="mob-nav-icon-img" alt=""><span>All Categories</span></a></li>
-                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><img src="/assets/images/icons/more.webp" class="mob-nav-icon-img" alt=""><span>More on Flipkart</span></a></li>
-                                <hr class="m-0">
-                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><img src="/assets/images/icons/offer.webp" class="mob-nav-icon-img" alt=""><span>Offer Zone</span></a></li>
-                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><img src="/assets/images/icons/sell.webp" class="mob-nav-icon-img" alt=""><span>Sell on Flipkart</span></a></li>
-                                <hr class="m-0">
-                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><img src="/assets/images/icons/myorder.webp" class="mob-nav-icon-img" alt=""><span>My Orders</span></a></li>
-                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><img src="/assets/images/icons/coupones.webp" class="mob-nav-icon-img" alt=""><span>Coupons</span></a></li>
-                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><img src="/assets/images/icons/cart.webp" class="mob-nav-icon-img" alt=""><span>My Cart</span></a></li>
-                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><img src="/assets/images/icons/wishlist.webp" class="mob-nav-icon-img" alt=""><span>My Wishlist</span></a></li>
-                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><img src="/assets/images/icons/myaccount.webp" class="mob-nav-icon-img" alt=""><span>My Account</span></a></li>
-                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><img src="/assets/images/icons/notification.webp" class="mob-nav-icon-img" alt=""><span>My Notification</span></a></li>
-                                <hr class="m-0">
-                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><span>Notification Preferences</span></a></li>
-                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><span>Help Center</span></a></li>
-                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><span>Legal</span></a></li>
+                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><span>Home </span></a></li>
+                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><span>Master plan</span></a></li>
+                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><span>Floor plans</span></a></li>
+                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><span>Pricing</span></a></li>
+                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><span>Amenities</span></a></li>
+                                <li class="nav-mobile-ul-t-li"><a href="" class="nav-mobile-ul-t-li-a"><span>Location</span></a></li>
                             </ul>
+                            <div class="px-3">
+                                <button class="btn-primary">Register Now</button>
+                            </div>
+                            <div>
+                                <img src="./images/aminities/l2.jpg" width="70px" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -72,12 +66,269 @@
 
     <!---------------- Section 1 Start----------------->
     <section class="sec-1-wrapper">
-        <div class="w-100">
-            
+        <div class="container">
+            <div class="row sec-1-row">
+                <div class="col-lg-6">
+                    <h1 class="banner-t-1">NIKOO GARDEN ESTATES</h1>
+                    <p class="sec-1-p">Luxury 2/2.5/3/3.5 & 4 BED Apartments, Row Houses & Villaments in Sadahalli - Airport Rd - North Bangalore.</p>
+                    <p class="sec1-price">₹ 1.15 Cr Onwards*</p>
+                    <button class="btn-secondary btn">Get brochure</button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="banner-img">
+                        <img src="./images/banner-1.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!---------------- Section 1 End----------------->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!---------------- Section 2 Start----------------->
+    <section class="sec-2-wrap">
+            <div class="container">
+                <div>
+                    <h1 class="title">PROJECT OVERVIEW</h1>
+                    <div class="sec-2-grid-view">
+                        <div class="sec2-box-card text-center">
+                            <i class="fa-solid fa-expand"></i>
+                            <h3>29 Acres</h3>
+                        </div>
+                        <div class="sec2-box-card text-center"></div>
+                        <div class="sec2-box-card text-center"></div>
+                        <div class="sec2-box-card text-center"></div>
+                        <div class="sec2-box-card text-center"></div>
+                    </div>
+                </div>
+                <div class="row my-5 py-5 row-ga-sec2">
+                    <div class="col-lg-6 text-center sec2-in-lt">
+                        <h1 class="sec2-in-lt-t">Nikoo Homes : Your Dream Home Awaits in Airport Rd, North Bangalore!</h1>
+                        <p class="sec2-in-lt-p">Bhartiya Nikoo Homes is excited to announce the new upcoming launch of Nikoo Garden Estates, a remarkable township project in Sadahalli – Airport Road, North Bangalore. This luxurious development offers a wide range of <strong>2/2.5/3/3.5 and 4 BHK Apartments, Townhouses & Courtyard Villas</strong> designed to meet the needs of discerning homebuyers.</p>
+                        <button class="btn-secondary btn">Get brochure</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <div>
+                            <img src="./images/sec-2-img.jpg" class="w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!---------------- Section 2 End----------------->
+
+    <!---------------- Section 3 Start----------------->
+    <section class="sec-3-wrapper">
+        <div class="container sec-3-container">
+            <h1 class="title">MASTER PLAN</h1>
+            <div class="text-center sec3-inner-img">
+                <img src="./images/master-plan.jpg" class="w-75" alt="">
+                <div class="sec3-btn-overl">
+                    <button class="btn-secondary btn">Get brochure</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------- Section 3 End----------------->
+
+    <!---------------- Section 4 Start----------------->
+    <section class="sec-4-wrapper">
+        <!----------Appartment Start------------>
+        <div class="container sec-3-container">
+            <h1 class="title">APARTMENTS</h1>
+        </div>
+        <div class="sec-4-inner">
+            <div class="container">
+                <div class="row sec-4-card-wrap">
+                    <div class="col-lg-4 col-md-6 sec-4-card">
+                        <div class="sec-4-card-t-box">
+                            <h3 class="sec4-card-t">1 BED (793 sq.ft) <br/> ₹ 83 Lacs Onwards*</h3>
+                        </div>
+                        <div class="sec4-card-img">
+                            <img src="./images/plan.png" width="100%" alt="">
+                            <div class="sec4-card-btn-over">
+                                <button class="btn-secondary btn">Check plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sec-4-card">
+                        <div class="sec-4-card-t-box">
+                            <h3 class="sec4-card-t">1 BED (793 sq.ft) <br/> ₹ 83 Lacs Onwards*</h3>
+                        </div>
+                        <div class="sec4-card-img">
+                            <img src="./images/plan.png" width="100%" alt="">
+                            <div class="sec4-card-btn-over">
+                                <button class="btn-secondary btn">Check plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sec-4-card">
+                        <div class="sec-4-card-t-box">
+                            <h3 class="sec4-card-t">1 BED (793 sq.ft) <br/> ₹ 83 Lacs Onwards*</h3>
+                        </div>
+                        <div class="sec4-card-img">
+                            <img src="./images/plan.png" width="100%" alt="">
+                            <div class="sec4-card-btn-over">
+                                <button class="btn-secondary btn">Check plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sec-4-card text-center">
+                        <h3 class="sec4-card-t my-4">Cost Sheet</h3>
+                        <div class="sec4-card-img">
+                            <img src="./images/costing.png" width="100%" alt="">
+                            <div class="my-4">
+                                <button class="btn-secondary btn">Check plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------Appartment End------------>
+        <!----------VILLAMENTS Start------------>
+        <div class="container sec-3-container">
+            <h1 class="title">VILLAMENTS</h1>
+        </div>
+        <div class="sec-4-inner">
+            <div class="container">
+                <div class="row sec-4-card-wrap">
+                    <div class="col-lg-4 col-md-6 sec-4-card">
+                        <div class="sec-4-card-t-box">
+                            <h3 class="sec4-card-t">1 BED (793 sq.ft) <br/> ₹ 83 Lacs Onwards*</h3>
+                        </div>
+                        <div class="sec4-card-img">
+                            <img src="./images/plan.png" width="100%" alt="">
+                            <div class="sec4-card-btn-over">
+                                <button class="btn-secondary btn">Check plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sec-4-card">
+                        <div class="sec-4-card-t-box">
+                            <h3 class="sec4-card-t">1 BED (793 sq.ft) <br/> ₹ 83 Lacs Onwards*</h3>
+                        </div>
+                        <div class="sec4-card-img">
+                            <img src="./images/plan.png" width="100%" alt="">
+                            <div class="sec4-card-btn-over">
+                                <button class="btn-secondary btn">Check plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sec-4-card text-center">
+                        <h3 class="sec4-card-t my-4">Cost Sheet</h3>
+                        <div class="sec4-card-img">
+                            <img src="./images/costing.png" width="100%" alt="">
+                            <div class="my-4">
+                                <button class="btn-secondary btn">Check plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------VILLAMENTS End------------>
+        <!----------ROW VILLAS Start------------>
+        <div class="container sec-3-container">
+            <h1 class="title">VILLAMENTS</h1>
+        </div>
+        <div class="sec-4-inner">
+            <div class="container">
+                <div class="row sec-4-card-wrap">
+                    <div class="col-lg-4 col-md-6 sec-4-card">
+                        <div class="sec-4-card-t-box">
+                            <h3 class="sec4-card-t">1 BED (793 sq.ft) <br/> ₹ 83 Lacs Onwards*</h3>
+                        </div>
+                        <div class="sec4-card-img">
+                            <img src="./images/plan.png" width="100%" alt="">
+                            <div class="sec4-card-btn-over">
+                                <button class="btn-secondary btn">Check plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sec-4-card">
+                        <div class="sec-4-card-t-box">
+                            <h3 class="sec4-card-t">1 BED (793 sq.ft) <br/> ₹ 83 Lacs Onwards*</h3>
+                        </div>
+                        <div class="sec4-card-img">
+                            <img src="./images/plan.png" width="100%" alt="">
+                            <div class="sec4-card-btn-over">
+                                <button class="btn-secondary btn">Check plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sec-4-card text-center">
+                        <h3 class="sec4-card-t my-4">Cost Sheet</h3>
+                        <div class="sec4-card-img">
+                            <img src="./images/costing.png" width="100%" alt="">
+                            <div class="my-4">
+                                <button class="btn-secondary btn">Check plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------ROW VILLAS End------------>
+    </section>
+    <!---------------- Section 4 End----------------->
+
+    <!----------------Section 5 Start---------------->
+    <section class="sec-5-wrapper py-4">
+        <div class="container">
+            <h1 class="title">AMENITIES</h1>
+
+            <div class="my-4 swiper mySwiper" id="amenities">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/aminities/1.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/aminities/1.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/aminities/1.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/aminities/1.jpg" class="w-100" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <!----------------Section 5 End---------------->
+
+    <!----------------Section 6 Start---------------->
+    <section class="sec-6-wrapper py-4">
+        <div class="container">
+            <h1 class="title">LOCATION</h1>
+
+            <div class="row sec-6-row mt-4">
+                <div class="col-lg-6 col-md-6">
+                    <ul class="sec6-list">
+                        <li><i class="fa-solid fa-location-dot"></i> <span>Prestige Tech Cloud - 1 mins</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i> <span>Nearby Metro Station - 3 mins</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i> <span>Forum Mall - 3 mins</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i> <span>Bangalore Airport - 8 mins</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i> <span>Hebbal - 10 mins</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i> <span>KIADB Aerospace Park - 12 mins</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="w-100" style="height: 400px;">
+                        <iframe class="w-100 h-100" src="https://maps.google.com/maps?q=Bhartiya%20City%20Nikoo%20Homes%20%2C%20Airport%20%2C%20Sadahalli&t=m&z=10&output=embed&iwloc=near" title="Bhartiya City Nikoo Homes , Airport , Sadahalli" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------Section 6 End---------------->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
