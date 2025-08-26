@@ -515,7 +515,10 @@ margin-top: 20px;
 }
 
 
-
+.err-msg{
+    font-size: 11px ;
+    color: rgb(179, 2, 2);
+}
 
 
 /* Discliamer css */

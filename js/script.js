@@ -32,3 +32,6 @@ var swiper = new Swiper("#amenities", {
         }
     }
 });
+
+
+
