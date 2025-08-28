@@ -84,7 +84,7 @@ $(document).ready(function () {
 
         console.log(popupFormData.value);
          validation.projectName=popupFormTitleInput.value +" " + popupFormData.value
-        //    sendEmail(validation)
+           sendEmail(validation)
         
     }) 
 
@@ -98,7 +98,7 @@ $(document).ready(function () {
 
         console.log(validation,"Register Form");
         validation.projectName="Register Form"
-        // sendEmail(validation)
+        sendEmail(validation)
         
     }) 
 
