@@ -136,7 +136,7 @@ let rowvilla = [
                     <div class="my-4">
                         <button class="btn-secondary btn open-form-btn"
                         data-index="${i}"
-                        data-formdata='${[data.title,'Apartment']}'
+                        data-formdata='${'Apartment '+data.title}'
                         data-form-title="${data.formTitle}"
                         data-form-type="${data.formType}">${data.buttonText}<i class="fa-solid fa-download"></i></button>
                     </div>
@@ -152,7 +152,7 @@ let rowvilla = [
                         <img src="${data.image}" width="100%" alt="">
                         <div class="sec4-card-btn-over">
                             <button class="btn-secondary btn open-form-btn"
-                            data-formdata='${[data.title,'Apartment']}'
+                            data-formdata='${'Apartment '+data.title}'
                             data-index="${i}"
                             data-form-title="${data.formTitle}"
                             data-form-type="${data.formType}">${data.buttonText}<i class="fa-solid fa-download"></i></button>
@@ -177,7 +177,7 @@ let rowvilla = [
                     <img src="${data.image}" width="100%" alt="">
                     <div class="my-4">
                         <button class="btn-secondary btn open-form-btn"
-                        data-formdata='${[data.title,'VILLAMENTS']}'
+                        data-formdata='${'VILLAMENTS '+data.title}'
                         data-index="${i}"
                         data-form-title="${data.formTitle}"
                         data-form-type="${data.formType}">${data.buttonText}<i class="fa-solid fa-download"></i></button>
@@ -194,7 +194,7 @@ let rowvilla = [
                     <img src="${data.image}" width="100%" alt="">
                     <div class="sec4-card-btn-over">
                         <button class="btn-secondary btn open-form-btn"
-                        data-formdata='${[data.title,'VILLAMENTS']}'
+                        data-formdata='${'VILLAMENTS '+data.title}'
                         data-index="${i}"
                         data-form-title="${data.formTitle}"
                         data-form-type="${data.formType}">${data.buttonText}<i class="fa-solid fa-download"></i></button>
@@ -219,7 +219,7 @@ let rowvilla = [
                     <img src="${data.image}" width="100%" alt="">
                     <div class="my-4">
                         <button class="btn-secondary btn open-form-btn"
-                        data-formdata='${[data.title,'ROW VILLAS']}'
+                        data-formdata='${'ROW VILLAS ' +data.title}'
                         data-index="${i}"
                         data-form-title="${data.formTitle}"
                         data-form-type="${data.formType}">${data.buttonText} <i class="fa-solid fa-download"></i></button>
@@ -236,7 +236,7 @@ let rowvilla = [
                     <img src="${data.image}" width="100%" alt="">
                     <div class="sec4-card-btn-over">
                         <button class="btn-secondary btn open-form-btn"
-                        data-formdata='${[data.title,'ROW VILLAS']}'
+                        data-formdata='${'ROW VILLAS ' +data.title}'
                         data-index="${i}"
                         data-form-title="${data.formTitle}"
                         data-form-type="${data.formType}">${data.buttonText}<i class="fa-solid fa-download"></i></button>

@@ -83,6 +83,8 @@ $(document).ready(function () {
         console.log(popupFormTitleInput.value);
 
         console.log(popupFormData.value);
+         validation.projectName=popupFormTitleInput.value +" " + popupFormData.value
+        //    sendEmail(validation)
         
     }) 
 
@@ -95,13 +97,15 @@ $(document).ready(function () {
         if(Object.keys(validation).length <4) return
 
         console.log(validation,"Register Form");
+        validation.projectName="Register Form"
+        // sendEmail(validation)
         
     }) 
 
 
 
     const sendEmail = (validData) => {
-        emailjs.send("ss", "template", validData)
+        emailjs.send("service_7pjgy1f", "template_bpbvdig", validData)
             .then(() => {
                 alert("Email sent successfully!");
             }, (error) => {

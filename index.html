@@ -1,17 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/png" href="./images/logo.png">
     <title>Bhartiya Nikoo Homes Apartments in Thanisandra and Yelahanka</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <!-- Example (you need the actual path to the icon font CSS) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -40,7 +42,7 @@
                         </ul>
                     </div>
                     <div class="col-md-3 col-5 text-end d-none d-md-none d-lg-block">
-                        <button class="btn-primary"><a href="#register">Register Now</a></button>
+                        <button class="btn-primary"><a href="#register" style="color: azure;">Register Now</a></button>
                     </div>
                 </div>
                 <div class="nav-toggle-wrapper">
@@ -71,7 +73,7 @@
                                         class="nav-mobile-ul-t-li-a"><span>Location</span></a></li>
                             </ul>
                             <div class="px-3">
-                                <button class="btn-primary"><a href="#register">Register Now</a></button>
+                                <button class="btn-primary"><a href="#register" style="color: azure;">Register Now</a></button>
                             </div>
                             <div>
                                 <img src="./images/aminities/l2.jpg" width="70px" alt="">
@@ -143,7 +145,7 @@
                         luxurious development offers a wide range of <strong>2/2.5/3/3.5 and 4 BHK Apartments,
                             Townhouses & Courtyard Villas</strong> designed to meet the needs of discerning homebuyers.
                     </p>
-                    <button class="btn-secondary btn ">Enquire Now</button>
+                    <button class="btn-secondary btn get-mrc " data-formdata="Enquire Now">Enquire Now</button>
                 </div>
                 <div class="col-lg-6">
                     <div>
@@ -162,7 +164,7 @@
             <div class="text-center sec3-inner-img">
                 <img src="./images/master-plan.jpg" class="w-75" alt="">
                 <div class="sec3-btn-overl">
-                    <button class="btn-secondary btn open-form-btn"  data-formdata="[Master Plan,'Master Plan']">View Master Plan</button>
+                    <button class="btn-secondary btn open-form-btn"  data-formdata="Master Plan">View Master Plan</button>
                 </div>
             </div>
         </div>
@@ -297,7 +299,7 @@
                                 <input type="text" name="user_name" placeholder="Enter Your Name" required id="register_name" />
                             </div>
                             <div class="inp-fiels">
-                                <input type="tel" name="user_phone" placeholder="Your Phone Number" required id="register_phone" />
+                                <input type="tel" name="user_phone" placeholder="Your Phone Number" required id="register_phone"   maxlength="10" pattern="\d{10}" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)" />
                             </div>
                             <div class="inp-fiels">
                                 <input type="email" name="user_email" placeholder="Enter Your Email" required id="register_email" />
@@ -370,14 +372,16 @@
     </div>
 
     <!-----------------POP UP END---------------------->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/form.js"></script>
     <script src="./js/data.js"></script>
-    
+    <script>
+    emailjs.init("XtA_OE1aZeFRE5M2h"); // Replace with your actual public key
+  </script>
     <script>
         $(document).ready(function () {
             $('.form-popup-close').on('click', function () {
