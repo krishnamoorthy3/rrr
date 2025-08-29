@@ -598,6 +598,9 @@ margin-top: 20px;
 .inpt-d{
     margin: 20px 0;
 }
+.nav-logo{
+    width: 250px;
+}
 @media only screen and (min-width:768px) and (max-width:1024px) {
     .sec-2-grid-view{
         grid-template-columns: repeat(3,1fr);
@@ -609,6 +612,8 @@ margin-top: 20px;
     }
     .row-ga-sec2{
         row-gap: 45px;
+        margin-bottom: 0px !important;
+        padding-bottom: 0px !important;
     }
 }
 @media only screen and (max-width:767px){

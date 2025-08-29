@@ -76,7 +76,7 @@
                                 <button class="btn-primary"><a href="#register" style="color: azure;">Register Now</a></button>
                             </div>
                             <div>
-                                <img src="./images/aminities/l2.jpg" width="70px" alt="">
+                                <img src="./images/aminities/dis.jpg" width="70px" alt="">
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                     </div>
                     <div class="sec2-box-card text-center">
                         <i class="bi bi-cash"></i>
-                        <h3>₹ 1.15 CR Onwards*</h3>
+                        <h3>₹ 1.27 CR Onwards*</h3>
                     </div>
                     <div class="sec2-box-card text-center">
                         <i class="bi bi-calendar2-week"></i>
@@ -145,7 +145,7 @@
                         luxurious development offers a wide range of <strong>2/2.5/3/3.5 and 4 BHK Apartments,
                             Townhouses & Courtyard Villas</strong> designed to meet the needs of discerning homebuyers.
                     </p>
-                    <button class="btn-secondary btn get-mrc " data-formdata="Enquire Now">Enquire Now</button>
+                    <button class="btn-secondary btn get-mrc enqform" data-formdata="Enquire Now">Enquire Now</button>
                 </div>
                 <div class="col-lg-6">
                     <div>
@@ -398,11 +398,18 @@
         });
 
         // Open popup with "View Cost Details" title
-        $('.get-mrc').on('click', function () {
+        $('.get-mrc').on('click', function (e) {
+            const enq=e.target.classList
+            console.log();
+            
             $('#popupFormTitle').text('SEND FLOOR PLAN DETAILS :');
             $('#popupFormTitleInput').val('VIEW COST DETAILS');
             $('#popupFormType').val('cost-details');
             $('#brouchure_popup').css({ display: 'block' });
+
+            if(enq.value.includes("enqform")){
+                $('#popupFormTitle').text('Enquire Now :');
+            }
         });
     </script>
     
