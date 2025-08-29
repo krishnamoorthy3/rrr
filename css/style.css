@@ -640,4 +640,7 @@ margin-top: 20px;
     .sec-2-grid-view .sec2-box-card:last-child{
         grid-column: span 2 / span 2;
     }
+    .nav-logo{
+        width: 132px;
+    }
 }
