@@ -1,7 +1,7 @@
 let apartment_Details = [
     {
         title: "1 BED (793 sq.ft)",
-        price: "₹ 83 Lacs Onwards*",
+        price: "₹ 94 Lacs Onwards*",
         image: "./images/apartment/one.png",
         buttonText: "Check plan",
         formTitle: "SEND FLOOR PLAN DETAILS :",
@@ -9,7 +9,7 @@ let apartment_Details = [
     },
     {
         title: "2 BED (1126 - 1176 sq.ft)",
-        price: "₹ 1.18 CR Onwards*",
+        price: "₹ 1.27 CR Onwards*",
         image: "./images/apartment/two.png",
         buttonText: "Check plan",
         formTitle: "SEND FLOOR PLAN DETAILS :",
@@ -17,7 +17,7 @@ let apartment_Details = [
     },
     {
         title: "3 BED+2T (1343 -1395 sq.ft)",
-        price: "₹ 1.41 CR Onwards**",
+        price: "₹ 1.49 CR Onwards**",
         image: "./images/apartment/three.png",
         buttonText: "Check plan",
         formTitle: "SEND FLOOR PLAN DETAILS :",
@@ -25,7 +25,7 @@ let apartment_Details = [
     },
     {
         title: "3 BED+3T  (1743 -1833 sq.ft)",
-        price: "₹ 1.83 CR Onwards*",
+        price: "₹ 1.91 CR Onwards*",
         image: "./images/apartment/four.png",
         buttonText: "Check plan",
         formTitle: "SEND FLOOR PLAN DETAILS :",
@@ -33,7 +33,7 @@ let apartment_Details = [
     },
     {
         title: "3.5 BED  (2045 sq.ft)",
-        price: "₹ 1.83 CR Onwards*",
+        price: "₹ 2.25 CR Onwards*",
         image: "./images/apartment/five.png",
         buttonText: "Check plan",
         formTitle: "SEND FLOOR PLAN DETAILS :",
@@ -41,7 +41,7 @@ let apartment_Details = [
     },
     {
         title: "3 BED DUPLEX  (2207 sq.ft)",
-        price: "₹ 2.31 CR Onwards*",
+        price: "₹ 2.40 CR Onwards*",
         image: "./images/apartment/six.png",
         buttonText: "Check plan",
         formTitle: "SEND FLOOR PLAN DETAILS :",
@@ -49,7 +49,7 @@ let apartment_Details = [
     },
     {
         title: "4 BED + STAFF  (2504 sq.ft)",
-        price: "₹ 2.62 CR Onwards*",
+        price: "₹ 2.75 CR Onwards*",
         image: "./images/apartment/seven.png",
         buttonText: "Check plan",
         formTitle: "SEND FLOOR PLAN DETAILS :",

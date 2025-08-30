@@ -395,8 +395,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fdfdfd70;
-    backdrop-filter: blur(4px);
+    /* background: #fdfdfd70;
+    backdrop-filter: blur(4px); */
 }
 
 /*Section 4*/
