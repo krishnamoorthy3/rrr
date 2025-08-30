@@ -121,8 +121,8 @@ $(document).ready(function () {
                  $('#register_now').css({"display":"none"});
                 $('#thank_you_msg').css({"display":"block"});
               }else{
-                $('#br_form').css({"display":"none"});
-                $('#thank_you_msg').css({"display":"block"});
+                $('#popupForm').css({"display":"none"});
+                $('#thank_you_msg_popup').css({"display":"block"});
               }
                 
             }, (error) => {
