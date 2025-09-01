@@ -59,12 +59,13 @@ $(document).ready(function () {
             errorMsg("Enter valid Phone No", mobNo)
         }
         //message
-        if (message.value.trim().length) {
+        if(message){
+        if (message.value.trim()!=="") {
             result.message = message.value.trim()
             message.value = ""
         } else {
             errorMsg("Enter Message", message)
-        }
+        }}
         result.current_date = getCurrentDateTime()
         return result
     }
@@ -80,7 +81,7 @@ $(document).ready(function () {
         clearAllErrors()
         const validation =formvalidation(popup_Name,popup_email,popup_Phno,popup_message)
 
-        if(Object.keys(validation).length <4) return
+        if(Object.keys(validation).length <5) return
 
         // console.log(validation)
         // console.log(popupFormTitleInput.value);
@@ -95,7 +96,7 @@ $(document).ready(function () {
     Register_btn.addEventListener("click",function(e){
         e.preventDefault();
         clearAllErrors()
-        const validation =formvalidation(register_name,register_email,register_phone)
+const validation = formvalidation(register_name, register_email, register_phone, null)
 
         if(Object.keys(validation).length <4) return
 
