@@ -96,19 +96,16 @@ $(document).ready(function () {
     Register_btn.addEventListener("click",function(e){
         e.preventDefault();
         clearAllErrors()
-const validation = formvalidation(register_name, register_email, register_phone, null)
+        const validation = formvalidation(register_name, register_email, register_phone, null)
 
         if(Object.keys(validation).length <4) return
 
         // console.log(validation,"Register Form");
         validation.projectName="Register Form"
-        // console.log(validation);
-    
-        
-        
+        // console.log(validation);       
         sendEmail(validation,"register")
 
-        
+    
     }) 
 
 
@@ -119,11 +116,13 @@ const validation = formvalidation(register_name, register_email, register_phone,
                 // alert("Email sent successfully!");
                 
               if(formtype == "register"){
-                 $('#register_now').css({"display":"none"});
-                $('#thank_you_msg').css({"display":"block"});
+                  $('#register_now').css({"display":"none"});
+                 // $('#thank_you_msg').css({"display":"block"});
+                    window.location.href = "../thankyou.html";
               }else{
                 $('#popupForm').css({"display":"none"});
-                $('#thank_you_msg_popup').css({"display":"block"});
+                // $('#thank_you_msg_popup').css({"display":"block"});
+                   window.location.href = "../thankyou.html";
               }
                 
             }, (error) => {
